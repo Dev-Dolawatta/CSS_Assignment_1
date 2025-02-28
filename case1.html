@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case_1</title>
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+    <style>
+        body>div{
+            /*width: 50vw;*/
+            /*height: 50vh;*/
+            position: relative;
+        }
+        body>div:first-child{
+            width: 50vw;
+            height: 50vh;
+            background: darkred;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+        }
+        body>div:nth-child(2){
+            width: 50vw;
+            height: 50vh;
+            background: green;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        body>div:nth-child(3){
+            width: 50vw;
+            height: 50vh;
+            background: darkgoldenrod;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        body>div:nth-child(4){
+            width: 50vw;
+            height: 50vh;
+            background: deeppink;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        body>div>div{
+            width: 20%;
+            aspect-ratio: 1/1;
+            background: white;
+            border-radius: 100%;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+        body>div>div>div{
+            background: red;
+            width: 50%;
+            aspect-ratio: 1/1;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+
+        }
+        body>div:nth-child(5){
+            background: white;
+            width: 20%;
+            aspect-ratio: 1/1;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+
+        }
+        body>div:nth-child(5)>div{
+            background: red;
+            position: absolute;
+            width: 50%;
+            aspect-ratio: 1/1;
+            margin: auto;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        body>.conor{
+            background: white;
+            width: 10%;
+            aspect-ratio: 1/1;
+            position: absolute;
+
+        }
+        body>div:nth-child(6){
+            top: 0;
+            border-bottom-right-radius: 100%;
+        }
+        body>div:nth-child(7){
+            right: 0;
+            border-bottom-left-radius: 100%;
+        }
+        body>div:nth-child(8){
+            bottom: 0;
+            border-top-right-radius: 100%;
+        }
+        body>div:nth-child(9){
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 100%;
+        }
+        body>div.center{
+            background: white;
+            width: 10%;
+            aspect-ratio: 1/1;
+            position: absolute;
+        }
+        body>div:nth-child(10){
+            right: 0;
+            left: 0;
+            top: -50px;
+            margin: auto;
+            /*border-bottom-right-radius: 100%;*/
+            /*border-bottom-left-radius: 100%;*/
+            border-radius: 0 0 100% 100%;
+        }
+        body>div:nth-child(11){
+            right: 0;
+            left: 0;
+            bottom: -50px;
+            margin: auto;
+            /*border-top-right-radius: 100%;*/
+            /*border-top-left-radius: 100%;*/
+            border-radius: 100% 100% 0 0;
+        }
+        body{
+            overflow: hidden;
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <div></div>
+    </div>
+
+</div>
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
+<div>
+    <div></div>
+</div>
+<!--comment-->
+<div class="conor"></div>
+<div class="conor"></div>
+<div class="conor"></div>
+<div class="conor"></div>
+
+<div class="center"></div>
+<div class="center"></div>
+</body>
+</html>
