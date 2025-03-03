@@ -2,61 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Case_3</title>
-    <style>
-        body>div{
-            width: 20%;
-            aspect-ratio: 1/1;
-            position: relative;
-            left: 470px;
-            top: 100px;
-            border-radius: 100%;
-            border: 20px solid grey;
-        }
-        body .red{
-            border-radius: 100%;
-            border: red 20px solid;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-        }
-        body>div>div:first-child{
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            border-radius: 100%;
-            background: purple;
-        }
-        #outer1{
-            width: 100%;
-            aspect-ratio: 1/1;
-            position: relative;
-            /*top:0;*/
-            /*bottom:0;*/
-            /*right:0;*/
-            /*left:0;*/
-            top:500px;
-            border-radius: 100%;
-            background: blue;
-        }
+    <title>CASE_3</title>
+  <link rel="stylesheet" href="assets/lib/normalize.css">
+  <Style>
+    section>div{
+      border-radius: 100%;
+      width: 20vw;
+      aspect-ratio: 1/1;
+    }
+    body>section{
+      position: relative;
+      width: 100vw;
+      aspect-ratio: 1/1;
+    }
+    section>div:first-child{
+      border: grey solid 15px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    section>div>div{
+      border-radius: 100%;
+      border: red solid  15px;
+      position:absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    section>div:nth-child(2){
+      border-radius: 100%;
+      background: purple;
+      position: absolute;
+      top: 300px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    section>div:nth-child(3){
+      border-radius: 100%;
+      background: blue;
+      position: absolute;
+      left: 0;
+      right:0;
+      margin: auto;
+      top: 1500px;
+    }
+    section>div:nth-child(4){
+      border-radius: 100%;
+      background:orangered;
+      position: absolute;
+      left: 0;
+      right:0;
+      margin: auto;
+      top: 2500px;
+    }
 
-
-    </style>
+  </Style>
 </head>
 <body>
-<div>
-    <div class="red">
-        <div></div>
+<section>
+  <div>
+    <div>
+      <div></div>
     </div>
-    <div id="outer1"></div>
-    <div id="outer2"></div>
-</div>
-
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+</section>
 </body>
 </html>
